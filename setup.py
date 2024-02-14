@@ -1,4 +1,7 @@
 from setuptools import find_packages, setup
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 
 setup(
     name="richard_fib_py",
@@ -6,8 +9,7 @@ setup(
     author="Richard Chukwu",
     author_email="richinex@gmail.com",
     description="Calculates a Fibonacci number",
-    long_description="A basic library that \
-      calculates Fibonacci numbers",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/richinex/richard- \
       fib-py",
